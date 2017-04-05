@@ -10,21 +10,22 @@ public class Uzd_1_9 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        Uzd_1_9 uzd19 = new Uzd_1_9();    // objekto sukurimas
-
-
+       // Uzd_1_9 uzd19 = new Uzd_1_9();    // objekto sukurimas
+       // uzd19.varMet(scanner);
+        float kuroVid = varMet(scanner);
+        System.out.println(kuroVid);
 
 
     }
-    public float varMet(Scanner scanner, float var1, float var2){
+    public static float varMet(Scanner scanner){
         System.out.println("Iveskite nuvaziuota kelia [km]");
-        var1 = scanner.nextFloat();
+        int var1 = scanner.nextInt();
         System.out.println("Iveskite sunaudotas kuro sanaudas");
-        var2 = scanner.nextFloat();
-        return 0;
+        int var2 = scanner.nextInt();
+        return vidMet(var1, var2);
 
     }
-    public float vidMet(float var1, float var2){
+    public static float vidMet(float var1, float var2){
        return (var2 * 100) / var1;
     }
 }
