@@ -25,25 +25,22 @@ public class Uzd_1_9 {
                 System.out.println("Suma lygi " + suma);
                 System.out.println("Jei ivesti skaiciu 5, galesite kartoti, ivede bet koki skaiciu paigsite skaiciavima");
                 i = scanner.nextInt();
-                if (i != 5) {
-                    return;
-                } break;
+               break;
             case 2:
                 int skirtumas = skirtMet(skaic1, skaic2);
                 System.out.println("Skirtumas lygus " + skirtumas);
                 System.out.println("Jei ivesti skaiciu 5, galesite kartoti, ivede bet koki skaiciu paigsite skaiciavima");
                 i = scanner.nextInt();
-                if (i != 5) {
-                    return;
-                } break;
+                 break;
             case 3:
                 int sandauga = sandMet(skaic1, skaic2);
                 System.out.println("Sandauga lygi " + sandauga);
                 System.out.println("Jei ivesti skaiciu 5, galesite kartoti, ivede bet koki skaiciu paigsite skaiciavima");
                 i = scanner.nextInt();
-                if (i != 5) {
-                    return;
-                } break;
+                break;
+                }
+                if(i!=5){
+            break;
                 }
         }
         }
